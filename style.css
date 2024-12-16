@@ -13,6 +13,8 @@ body {
     border-bottom: 1px solid #ccc;
     padding: 0.5em 1em;
     color: #333;
+    
+   
 }
 a{
     text-decoration: none;
@@ -21,6 +23,7 @@ a{
     display: flex;
     align-items: center;
     font-size: 1.2em;
+    margin-left: 20px;
 }
 
 .navbar .brand .circle {
@@ -29,6 +32,9 @@ a{
     background-color: #001d5c;
     border-radius: 50%;
     margin-right: 0.5em;
+    margin-top: 10PX;
+    margin-left: 30px;
+
 }
 
 .navbar .brand .name {
@@ -92,14 +98,16 @@ a{
 
 #personal img{
     
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
+  
     
 }
 #personal img:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+   
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .Aboutme{
     display: flex;
@@ -117,10 +125,10 @@ a{
     font-size: 25px;
     font-weight: bold;
     color: #001d5c;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Horizontally centers the image */
-    align-items: center; /* Vertically aligns the image (if height is set) */
-    text-align: center; /* Centers inline text */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     margin: 0 auto;
 
 
@@ -130,11 +138,18 @@ a{
     width: 350px;
     height: 350px;
     margin-bottom: 20px;
+    border: 5px  solid rgb(0, 35, 131 , .8) ;
+    
    
+}.Aboutme img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  
+
 }
 .Aboutme .alinks{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 .Aboutme a{
@@ -144,28 +159,16 @@ a{
     
 }
 .Aboutme a i{
-    font-size: 30px}
-.Aboutme .alinks #button{
+    font-size: 40px
+}
+.Aboutme .alinks #down{
    
+    color: white;
+    border-radius: 5px;
     background-color: #001d5c;
-    color: #ffffff; 
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-    font-weight: bold;
-    text-align: center;
-    transition: all 0.3s ease;
- 
 }
-.Aboutme .alinks #button:hover {
-    background-color: #0059b3; 
-    transform: translateY(-2px); 
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); }
-.Aboutme img:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
 
-}
+
 .ctitle{
     display: flex;
     justify-content: center;
